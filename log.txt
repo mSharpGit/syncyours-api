@@ -1,0 +1,12 @@
+2018/12/22 16:04:37 hi User Already exists
+2018/12/22 16:04:38 error:  User Already exists
+2018/12/22 16:04:38 response:  map[error:User Already exists]
+2018/12/20 11:07:37 response:  {97 mahmoud 5 hassoun $2a$10$ayO1pPnm1mlcpjBYa2Ecn.EdhwaORACWzWVgQdTkrra82vdHi1XtK mahmoud.adev@gmail.com khaldeh khaldeh lebanon 12345 0  2018-12-20 11:07:36}
+:  [{96 mahmoud 5 hassoun $2a$10$5OlfB.sqvHGWsJ/TFwIc8uZhrxR9H9dbpqoUxqFmemy0Tsi2eRtuq mahmoud.andev@gmail.com khaldeh khaldeh lebanon 12345 0  2018-12-19 13:16:25}]
+2018/12/20 10:59:58 response:  {0 mahmoud 5 hassoun 1234567890 mahmoud.andev@gmail.com khaldeh khaldeh lebanon 12345 0  }
+2018/12/20 11:00:07 response:  [{96 mahmoud 5 hassoun $2a$10$5OlfB.sqvHGWsJ/TFwIc8uZhrxR9H9dbpqoUxqFmemy0Tsi2eRtuq mahmoud.andev@gmail.com khaldeh khaldeh lebanon 12345 0  2018-12-19 13:16:25}]
+sult set
+2018/12/19 13:16:28 response:  map[error:sql: no rows in result set]
+018/12/19 11:00:35 response:  {89 mahmoud 5 hassoun 1234567890 mahmoud.andev@gmail.com khaldeh khaldeh lebanon 12345 0  }
+qbyUaHi35stZ8R6BMVFqHs. mahmoud.andev@gmail.com     1 NaW45X6Xwzs5XSFMLKzr5T0C8isqs04BubPDOlQGNGYtPGlcgg 2017-11-13 14:00:36} {85 Mahmoud4 127 Mahns $2a$10$zPtsV6cjH mahmoud.adev@gmail.com     1 dd 2017-11-12 14:25:29} {88 mahmoud 50 hassoun 1234567890 mahmoud.andev@gmail.com khaldeh khaldeh lebanon 12345 0  0000-00-00 00:00:00}]
+2018/12/19 10:53:35 response:  [{82 he 22 ok qqq Mahmoud.ghlive@gmail.com     1 YSjayi1b5QlbaYKglX5cUDlGIds7fZpsFKvIl4ICTeaOb92S4X 2017-11-13 20:40:34} {87 e 5 e $2a$10$kXLsrHPokW0j0Zvh4Vwx8uBBhGz9FxqbyUaHi35stZ8R6BMVFqHs. mahmoud.andev@gmail.com     1 NaW45X6Xwzs5XSFMLKzr5T0C8isqs04BubPDOlQGNGYtPGlcgg 2017-11-13 14:00:36} {85 Mahmoud4 127 Mahns $2a$10$zPtsV6cjH mahmoud.adev@gmail.com     1 dd 2017-11-12 14:25:29} {88 mahmoud 50 hassoun 1234567890 mahmoud.andev@gmail.com khaldeh khaldeh lebanon 12345 0  0000-00-00 00:00:00}]
