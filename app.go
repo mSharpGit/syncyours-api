@@ -44,9 +44,63 @@ func (a *App) initializeRoutes() {
 	a.Router.HandleFunc("/users", a.getUsers).Methods("GET")
 	a.Router.HandleFunc("/user", a.createUser).Methods("POST")
 	a.Router.HandleFunc("/authuser", a.authUser).Methods("POST")
+	a.Router.HandleFunc("/resetuser", a.resetUser).Methods("POST")
+	a.Router.HandleFunc("/resetuser/{id:[0-9]+}/{code}", a.updateUserPass).Methods("POST")
+	a.Router.HandleFunc("/valuser/{id:[0-9]+}/{code}", a.valUser).Methods("POST")
 	a.Router.HandleFunc("/user/{id:[0-9]+}", a.getUser).Methods("GET")
 	a.Router.HandleFunc("/user/{id:[0-9]+}", a.updateUser).Methods("PUT")
 	a.Router.HandleFunc("/user/{id:[0-9]+}", a.deleteUser).Methods("DELETE")
+}
+
+func (a *App) updateUserPass(w http.ResponseWriter, r *http.Request) {
+	vars := mux.Vars(r)
+	id, err := strconv.Atoi(vars["id"])
+	if err != nil {
+		respondWithError(w, http.StatusBadRequest, "Invalid user ID")
+		return
+	}
+	code := vars["code"]
+	/* if err != nil {
+		respondWithError(w, http.StatusBadRequest, "Invalid user ID")
+		return
+	} */
+	var u user
+	decoder := json.NewDecoder(r.Body)
+	if err := decoder.Decode(&u); err != nil {
+		respondWithError(w, http.StatusBadRequest, "Invalid resquest payload")
+		return
+	}
+	defer r.Body.Close()
+	if err := u.updateUserPass(a.DB, id, code); err != nil {
+		switch err {
+		case sql.ErrNoRows:
+
+			respondWithError(w, http.StatusNotFound, "Wrong Password Update Request")
+		default:
+
+			respondWithError(w, http.StatusInternalServerError, err.Error())
+
+		}
+		return
+	}
+	respondWithJSON(w, http.StatusOK, u)
+
+}
+
+func (a *App) resetUser(w http.ResponseWriter, r *http.Request) {
+
+	var u user
+	decoder := json.NewDecoder(r.Body)
+	if err := decoder.Decode(&u); err != nil {
+		respondWithError(w, http.StatusBadRequest, "Invalid request payload")
+		return
+	}
+	defer r.Body.Close()
+	if err := u.resetUser(a.DB); err != nil {
+		respondWithError(w, http.StatusInternalServerError, err.Error())
+		return
+	}
+	respondWithJSON(w, http.StatusCreated, u)
 }
 
 func (a *App) authUser(w http.ResponseWriter, r *http.Request) {
@@ -86,6 +140,46 @@ func (a *App) authUser(w http.ResponseWriter, r *http.Request) {
 		}
 		return
 	}
+}
+
+func (a *App) valUser(w http.ResponseWriter, r *http.Request) {
+	vars := mux.Vars(r)
+	id, err := strconv.Atoi(vars["id"])
+	if err != nil {
+		respondWithError(w, http.StatusBadRequest, "Invalid user ID")
+		return
+	}
+	code := vars["code"]
+	//log.Println("id:", id)
+	//log.Println("code:", code)
+
+	/* if err != nil {
+		respondWithError(w, http.StatusBadRequest, "Invalid user ID")
+		return
+	} */
+	var u user
+	u.ID = id
+	u.Verifycode = code
+	/* decoder := json.NewDecoder(r.Body)
+	if err := decoder.Decode(&u); err != nil {
+		respondWithError(w, http.StatusBadRequest, "Invalid resquest payload")
+		return
+	}
+	defer r.Body.Close() */
+	if err := u.verifyUser(a.DB); err != nil {
+		switch err {
+		case sql.ErrNoRows:
+
+			respondWithError(w, http.StatusNotFound, "Wrong Validation Request")
+		default:
+
+			respondWithError(w, http.StatusInternalServerError, err.Error())
+
+		}
+		return
+	}
+	respondWithJSON(w, http.StatusOK, u)
+
 }
 
 func (a *App) getUser(w http.ResponseWriter, r *http.Request) {

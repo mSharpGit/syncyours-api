@@ -1,12 +1,60 @@
-2018/12/22 16:04:37 hi User Already exists
-2018/12/22 16:04:38 error:  User Already exists
-2018/12/22 16:04:38 response:  map[error:User Already exists]
-2018/12/20 11:07:37 response:  {97 mahmoud 5 hassoun $2a$10$ayO1pPnm1mlcpjBYa2Ecn.EdhwaORACWzWVgQdTkrra82vdHi1XtK mahmoud.adev@gmail.com khaldeh khaldeh lebanon 12345 0  2018-12-20 11:07:36}
-:  [{96 mahmoud 5 hassoun $2a$10$5OlfB.sqvHGWsJ/TFwIc8uZhrxR9H9dbpqoUxqFmemy0Tsi2eRtuq mahmoud.andev@gmail.com khaldeh khaldeh lebanon 12345 0  2018-12-19 13:16:25}]
-2018/12/20 10:59:58 response:  {0 mahmoud 5 hassoun 1234567890 mahmoud.andev@gmail.com khaldeh khaldeh lebanon 12345 0  }
-2018/12/20 11:00:07 response:  [{96 mahmoud 5 hassoun $2a$10$5OlfB.sqvHGWsJ/TFwIc8uZhrxR9H9dbpqoUxqFmemy0Tsi2eRtuq mahmoud.andev@gmail.com khaldeh khaldeh lebanon 12345 0  2018-12-19 13:16:25}]
-sult set
-2018/12/19 13:16:28 response:  map[error:sql: no rows in result set]
-018/12/19 11:00:35 response:  {89 mahmoud 5 hassoun 1234567890 mahmoud.andev@gmail.com khaldeh khaldeh lebanon 12345 0  }
-qbyUaHi35stZ8R6BMVFqHs. mahmoud.andev@gmail.com     1 NaW45X6Xwzs5XSFMLKzr5T0C8isqs04BubPDOlQGNGYtPGlcgg 2017-11-13 14:00:36} {85 Mahmoud4 127 Mahns $2a$10$zPtsV6cjH mahmoud.adev@gmail.com     1 dd 2017-11-12 14:25:29} {88 mahmoud 50 hassoun 1234567890 mahmoud.andev@gmail.com khaldeh khaldeh lebanon 12345 0  0000-00-00 00:00:00}]
-2018/12/19 10:53:35 response:  [{82 he 22 ok qqq Mahmoud.ghlive@gmail.com     1 YSjayi1b5QlbaYKglX5cUDlGIds7fZpsFKvIl4ICTeaOb92S4X 2017-11-13 20:40:34} {87 e 5 e $2a$10$kXLsrHPokW0j0Zvh4Vwx8uBBhGz9FxqbyUaHi35stZ8R6BMVFqHs. mahmoud.andev@gmail.com     1 NaW45X6Xwzs5XSFMLKzr5T0C8isqs04BubPDOlQGNGYtPGlcgg 2017-11-13 14:00:36} {85 Mahmoud4 127 Mahns $2a$10$zPtsV6cjH mahmoud.adev@gmail.com     1 dd 2017-11-12 14:25:29} {88 mahmoud 50 hassoun 1234567890 mahmoud.andev@gmail.com khaldeh khaldeh lebanon 12345 0  0000-00-00 00:00:00}]
+2018/12/24 12:38:58 hi User Already exists
+2018/12/24 12:38:58 error:  User Already exists
+2018/12/24 12:38:58 response:  map[error:User Already exists]
+2018/12/24 12:39:09 hi User Already exists
+2018/12/24 12:39:09 error:  User Already exists
+2018/12/24 12:39:09 response:  map[error:User Already exists]
+2018/12/24 12:39:21 response:  [{101 77 77 77 $2a$10$f.Bd5K7lIPocpPA/9QdJSuGgM/jcfxLkcSXCyWNVdUqOvSupXSWXq 776 77 77 77 77 0  2018-12-22 18:07:32} {102 77 77 77 $2a$10$zPZrv9niiUi.r0aW8Io23ex8FSuzlKBoaBRSC8nj6H8a6iqaztNYC 7788 77 77 77 77 0  2018-12-22 18:21:44} {103 77 77 77 $2a$10$uOaJN6HUyDE1MrpGrLd2Nud8IplUoVuJ4Ivo1lt.mcVskGEqP53Ou 77889 77 77 77 77 0  2018-12-23 11:42:41} {100 777 77 77 $2a$10$vmvdAJsGRVDqBJpszOoXSuh66jzkCKOSAGQ9Oq9uE4ewH6Zk2gk0K 777 77 77 77 77 0  2018-12-22 18:02:51} {98 77 77 77 $2a$10$Dk9x1qFr5ovLUosS2m9mdeAC18.WAfizNTTcUwKHquRexYf42YNnO 77 77 77 77 77 0  2018-12-22 14:52:53} {99 77 77 77 $2a$10$GNV9aqk9UXZPm96WtbniuOHumUgHqeQtliCPQuPW39XPUPQ56Uhf2 778 77 77 77 77 0  2018-12-22 17:59:57} {97 mahmoud 5 hassoun $2a$10$ayO1pPnm1mlcpjBYa2Ecn.EdhwaORACWzWVgQdTkrra82vdHi1XtK mahmoud.adev@gmail.com khaldeh khaldeh lebanon 12345 0  2018-12-20 11:07:36} {96 mahmoud 5 hassoun $2a$10$5OlfB.sqvHGWsJ/TFwIc8uZhrxR9H9dbpqoUxqFmemy0Tsi2eRtuq mahmoud.andev@gmail.com khaldeh khaldeh lebanon 12345 0  2018-12-19 13:16:25}]
+2018/12/24 12:39:30 hi User Already exists
+2018/12/24 12:39:31 error:  User Already exists
+2018/12/24 12:39:31 response:  map[error:User Already exists]
+2018/12/24 12:40:28 response:  {88 mahmoud 50 hassoun 1234567890 mahmoud.andev@gmail.com khaldeh khaldeh lebanon 12345 0  }
+2018/12/24 12:40:54 hi User Already exists
+2018/12/24 12:40:54 error:  User Already exists
+2018/12/24 12:40:54 response:  map[error:User Already exists]
+2018/12/24 12:43:05 hi User Already exists
+2018/12/24 12:43:05 error:  User Already exists
+2018/12/24 12:43:05 response:  map[error:User Already exists]
+2018/12/24 13:00:10 hi User Already exists
+2018/12/24 13:00:10 error:  User Already exists
+2018/12/24 13:00:10 response:  map[error:User Already exists]
+2018/12/24 13:01:22 hi User Already exists
+2018/12/24 13:01:22 error:  User Already exists
+2018/12/24 13:01:22 response:  map[error:User Already exists]
+2018/12/24 13:02:23 hi User Already exists
+2018/12/24 13:02:23 error:  User Already exists
+2018/12/24 13:02:23 response:  map[error:User Already exists]
+2018/12/24 13:03:00 hi User Already exists
+2018/12/24 13:03:00 error:  User Already exists
+2018/12/24 13:03:00 response:  map[error:User Already exists]
+2018/12/24 13:03:10 hi User Already exists
+2018/12/24 13:03:10 error:  User Already exists
+2018/12/24 13:03:10 response:  map[error:User Already exists]
+2018/12/24 13:03:19 response:  {104 77 77 77 $2a$10$Ym0Eb0pjtIVCiQoViQ4EL.qZd8.ub.c1St5r8vRPJIP7Kvp3ekmce 7799 77 77 77 77 0  2018-12-24 13:03:18}
+2018/12/24 13:04:27 hi User Already exists
+2018/12/24 13:04:27 error:  User Already exists
+2018/12/24 13:04:27 response:  map[error:User Already exists]
+2018/12/24 13:10:57 hi User Already exists
+2018/12/24 13:10:57 error:  User Already exists
+2018/12/24 13:10:57 response:  map[error:User Already exists]
+2018/12/24 13:11:04 response:  {105 77 77 77 $2a$10$99te2iqJ.eWvxJIGKuokGOoUZjoLso8./wIAa.x53WILdrRYpEU5C 7789 77 77 77 77 0  2018-12-24 13:11:04}
+2018/12/24 13:30:11 hi User Already exists
+2018/12/24 13:30:11 error:  User Already exists
+2018/12/24 13:30:11 response:  map[error:User Already exists]
+2018/12/24 13:30:17 response:  {106 77 77 77 $2a$10$PoDYhxHwtWfKSd8a/fF5Y.batuzCqCqoZVNizLRN1Fo9/5Ietf5p2 7766 77 77 77 77 0  2018-12-24 13:30:17}
+2018/12/24 13:33:25 hi User Already exists
+2018/12/24 13:33:25 error:  User Already exists
+2018/12/24 13:33:25 response:  map[error:User Already exists]
+2018/12/24 13:33:30 response:  {107 77 77 77 $2a$10$xWDQDzop4w3cOoqzgIdXWe5a0tWqHRM1VecFLccrta.zBxE7ye2Fu 77887 7 77 77 77 0  2018-12-24 13:33:30}
+2018/12/24 13:51:04 response:  {108 f 0 f $2a$10$YyE04eyVrsMAMIX8wgmUE.1V6cRC1caJwNVhgKBR0yflo8DJxOCFi f f f f f 0  2018-12-24 13:51:03}
+ exists
+2018/12/24 12:29:28 response:  map[error:User Already exists]
+2018/12/24 12:31:46 hi User Already exists
+2018/12/24 12:31:46 error:  User Already exists
+2018/12/24 12:31:46 response:  map[error:User Already exists]
+2018/12/24 12:37:55 hi User Already exists
+2018/12/24 12:37:55 error:  User Already exists
+2018/12/24 12:37:55 response:  map[error:User Already exists]
+2018/12/24 12:38:13 hi User Already exists
+2018/12/24 12:38:13 error:  User Already exists
+2018/12/24 12:38:13 response:  map[error:User Already exists]

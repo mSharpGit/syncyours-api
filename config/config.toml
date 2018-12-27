@@ -1,0 +1,55 @@
+# This is a TOML document. Boom.
+
+title = "SYNCYOURS Configuration"
+
+[owner]
+name = "syncyours"
+organization = "syncyours"
+bio = "syncyours Cofounder & CEO\nMarketing managment app."
+dob = 2018-12-24T15:19:00Z # First class dates? Why not?
+URL = "localhost:4200"
+
+[Api]
+listener = "8080"
+
+[database]
+server = "192.254.181.110"
+port = "3306"
+user = "leenhal1_sync"
+password = "1Q@w3e4r5t6yaz"
+dbname="leenhal1_syncyours"
+connection_max = 5000
+enabled = true
+
+[servers]
+
+  # You can indent as you please. Tabs or spaces. TOML don't care.
+  [servers.alpha]
+  ip = "10.0.0.1"
+  dc = "eqdc10"
+
+  [servers.beta]
+  ip = "10.0.0.2"
+  dc = "eqdc10"
+
+[clients]
+data = [ ["gamma", "delta"], [1, 2] ] # just an update to make sure parsers support it
+
+# Line breaks are OK when inside arrays
+hosts = [
+  "alpha",
+  "omega"
+]
+
+[logs]
+location = "logs/log.txt"
+flag = 1 #os.O_WRONLY
+permission = 0666
+
+[smtp]
+from = "syncyours@gmail.com"
+cc = ""
+host = "smtp.gmail.com"
+port = 587
+username = "syncyours@gmail.com"
+password = "ilmmuytojfmsmssp"
