@@ -1,7 +1,10 @@
-2018/12/28 16:44:02 SELECT password, verifycode, regdate FROM users WHERE id=5
-2018/12/28 16:44:02 URL: http://localhost:4200/user/5/JlYSxQafSwJyJLumjAjtiagzTkfkqlMKNhWzSaDmVndki
-2018/12/28 16:44:04 response:  {5 mahmoud 12/10/2018 hassoun $2a$10$Gb82sBdmBT0EMJoxKproCOmvXVRa11AX23ZKmpKDsBWi7BbPqmjPi mahmoud.ghlivvvvvve@gmail.com road beirut lebanon 1500 0 JlYSxQafSwJyJLumjAjtiagzTkfkqlMKNhWzSaDmVndki 2018-12-28 16:44:02 0}
- 22:52:40 0} {3 df 0000-00-00 df $2a$10$BOIjzCuppGSxC22AsR5E/.e7lb1DMBAE/911mm6AONs5CYPwczjBW df df df Canada df 0 aIFTxIWuGFMiCGdiaOdEWAXACvzFWFGSKotBfLHKMtzam 2018-12-28 12:27:57 0} {4 77 0000-00-00 77 $2a$10$fikpjvjw3jTT84YGHGeJfenWZDrme53Yt9aTzXjpaLOHKhXQ08k4O mahmoud.ghliveeeeeeeeeeeeeeee@gmail.com 77 77 Lebanon 77 0 fTkwSwkcpoeoIkjNMZhVDgXSAqawZXioGSSqfYIMSddWa 2018-12-28 12:31:26 0}]
+2018/12/28 18:58:49 error:  User Already exists
+2018/12/28 18:58:49 response:  map[error:User Already exists]
+2018/12/28 18:58:58 SELECT password, verifycode, regdate FROM users WHERE id=8
+2018/12/28 18:58:59 URL: http://localhost:4200/user/8/TWGLxkiqIzedxJhjgoxweNVUIfDlWGoTAUziavuwoISgA
+2018/12/28 18:59:01 response:  {8 mahmoud 12/10/2018 hassoun $2a$10$shbDWZX4h2KnigRJ7qw3luKpZxEtbI1NJAmo/w7e2N5PXzgSMDI/y mahmoud.ghliv1vve@gmail.com road beirut lebanon 1500 0 TWGLxkiqIzedxJhjgoxweNVUIfDlWGoTAUziavuwoISgA 2018-12-28 18:58:58 0}
+cannot be null]
+FMiCGdiaOdEWAXACvzFWFGSKotBfLHKMtzam 2018-12-28 12:27:57 0} {4 77 0000-00-00 77 $2a$10$fikpjvjw3jTT84YGHGeJfenWZDrme53Yt9aTzXjpaLOHKhXQ08k4O mahmoud.ghliveeeeeeeeeeeeeeee@gmail.com 77 77 Lebanon 77 0 fTkwSwkcpoeoIkjNMZhVDgXSAqawZXioGSSqfYIMSddWa 2018-12-28 12:31:26 0}]
 2018/12/28 16:38:26 error:  Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%!d(string=12/10/2018), 'hassoun', '$2a$10$DSj0ET39u8w3zGqtOUQwxu2Qg7sK8eNpPSbqJ' at line 1
 2018/12/28 16:38:26 response:  map[error:Error 1064: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '%!d(string=12/10/2018), 'hassoun', '$2a$10$DSj0ET39u8w3zGqtOUQwxu2Qg7sK8eNpPSbqJ' at line 1]
 7 14:46:46 error:  Password is wrong

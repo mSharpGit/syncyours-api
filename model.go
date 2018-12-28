@@ -140,7 +140,9 @@ func (u *user) createUser(db *sql.DB) error {
 			// TODO: Properly handle error
 			log.Fatal(err)
 		}
-		statement = fmt.Sprintf("INSERT INTO users(name, age, surname, password, email, address, city, country, postalcode, confirmed, verifycode, regdate) VALUES('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %d,'%s','%s')", u.Name, u.Age, u.Surname, hash, u.Email, u.Address, u.City, u.Country, u.Postalcode, u.Confirmed, u.Verifycode, time.Now())
+		date := "%m/%d/%Y"
+		statement = fmt.Sprintf("INSERT INTO users(name, age, surname, password, email, address, city, country, postalcode, confirmed, verifycode, regdate) VALUES('%s', STR_TO_DATE('%s', '%s'), '%s', '%s', '%s', '%s', '%s', '%s', '%s', %d,'%s','%s')", u.Name, u.Age, date, u.Surname, hash, u.Email, u.Address, u.City, u.Country, u.Postalcode, u.Confirmed, u.Verifycode, time.Now())
+		//log.Println(statement)
 		_, err = db.Exec(statement)
 		if err != nil {
 			return err
