@@ -35,7 +35,7 @@ func (u *user) updateUserPass(db *sql.DB, id int, code string) error {
 		// TODO: Properly handle error
 		log.Fatal(err)
 	}
-	statement := fmt.Sprintf("SELECT id, name, age, surname, password, email, address, city, country, postalcode, confirmed, verifycode, regdate FROM users WHERE id = (select usersid from resetpass where id=%d)", id)
+	statement := fmt.Sprintf("SELECT id, name, age, surname, password, email, address, city, country, postalcode, confirmed, verifycode, regdate FROM users WHERE id = (select usersid from resetpass where id=%d and confirmed = 0)", id)
 	err = db.QueryRow(statement).Scan(&u.ID, &u.Name, &u.Age, &u.Surname, &u.Password, &u.Email, &u.Address, &u.City, &u.Country, &u.Postalcode, &u.Confirmed, &u.Verifycode, &u.Regdate)
 	if err != nil {
 		return err
