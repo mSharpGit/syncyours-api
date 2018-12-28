@@ -14,7 +14,7 @@ import (
 type user struct {
 	ID         int    `json:"id"`
 	Name       string `json:"name"`
-	Age        int    `json:"age"`
+	Age        string `json:"age"`
 	Surname    string `json:"surname"`
 	Password   string `json:"password"`
 	Email      string `json:"email"`
@@ -114,7 +114,7 @@ func (u *user) getUser(db *sql.DB) error {
 	return db.QueryRow(statement).Scan(&u.Name, &u.Age, &u.Surname, &u.Password, &u.Email, &u.Address, &u.City, &u.Country, &u.Postalcode, &u.Confirmed, &u.Verifycode, &u.Regdate)
 }
 func (u *user) updateUser(db *sql.DB) error {
-	statement := fmt.Sprintf("UPDATE users SET name='%s', age=%d, surname='%s', email='%s', address='%s', city='%s', country='%s', postalcode='%s', confirmed=%d, verifycode='%s' WHERE id=%d", u.Name, u.Age, u.Surname, u.Email, u.Address, u.City, u.Country, u.Postalcode, u.Confirmed, u.Verifycode, u.ID)
+	statement := fmt.Sprintf("UPDATE users SET name='%s', age='%s', surname='%s', email='%s', address='%s', city='%s', country='%s', postalcode='%s', confirmed=%d, verifycode='%s' WHERE id=%d", u.Name, u.Age, u.Surname, u.Email, u.Address, u.City, u.Country, u.Postalcode, u.Confirmed, u.Verifycode, u.ID)
 	_, err := db.Exec(statement)
 	return err
 }
@@ -140,7 +140,7 @@ func (u *user) createUser(db *sql.DB) error {
 			// TODO: Properly handle error
 			log.Fatal(err)
 		}
-		statement = fmt.Sprintf("INSERT INTO users(name, age, surname, password, email, address, city, country, postalcode, confirmed, verifycode, regdate) VALUES('%s', %d, '%s', '%s', '%s', '%s', '%s', '%s', '%s', %d,'%s','%s')", u.Name, u.Age, u.Surname, hash, u.Email, u.Address, u.City, u.Country, u.Postalcode, u.Confirmed, u.Verifycode, time.Now())
+		statement = fmt.Sprintf("INSERT INTO users(name, age, surname, password, email, address, city, country, postalcode, confirmed, verifycode, regdate) VALUES('%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', '%s', %d,'%s','%s')", u.Name, u.Age, u.Surname, hash, u.Email, u.Address, u.City, u.Country, u.Postalcode, u.Confirmed, u.Verifycode, time.Now())
 		_, err = db.Exec(statement)
 		if err != nil {
 			return err
