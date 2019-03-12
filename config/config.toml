@@ -14,11 +14,11 @@ URL = "syncyours.com"
 listener = "8080"
 
 [database]
-server = "192.254.181.110"
+server = ""
 port = "3306"
-user = "leenhal1_sync"
-password = "1Q@w3e4r5t6yaz"
-dbname="leenhal1_syncyours"
+user = ""
+password = ""
+dbname=""
 connection_max = 5000
 enabled = true
 
